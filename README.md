@@ -158,7 +158,3 @@ Set-ServerComponentState <ServerName> -Component RecoveryActionsEnabled -State A
 ```
 
 ---
-
-This version is clean, consistent, and professional — perfect for a GitHub repository.
-
-Would you like me to also create a **shorter checklist version** or a **one-page quick reference** for this topic? Just say the word.
