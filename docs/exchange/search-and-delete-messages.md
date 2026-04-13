@@ -89,3 +89,31 @@ Get-Mailbox -ResultSize Unlimited |
     -DeleteContent -Force
 ```
 ---
+## Search Only (Log Mode)
+It is highly recommended to run a search in log mode before deleting any messages:
+```PowerShell
+Get-Mailbox -ResultSize Unlimited |
+  Search-Mailbox -SearchQuery 'From:"a.nowzari@bina-epc.com" AND Sent:09/07/2025' `
+    -LogOnly -LogLevel Full
+```
+---
+## Verify Results
+After deletion, you can verify using the following command on a sample user:
+
+```PowerShell
+Search-Mailbox -Identity "testuser@domain.com" `
+  -SearchQuery 'Subject:"Saying goodbye is never easy"' `
+  -EstimateResultOnly
+```
+>**Note**: Deleted messages will not appear in the Deleted Items folder.
+
+---
+## Limitations and Recommendations
+
+The `Search-Mailbox` cmdlet is limited to 10,000 results per mailbox. For larger environments or more than 10,000 items, use the modern `New-ComplianceSearch` and `New-ComplianceSearchAction` cmdlets instead.
+Always test your search query without the `-DeleteContent` switch first.
+Use the `-Force` switch to avoid confirmation prompts for every mailbox.
+For better performance and scalability in large organizations, consider using Compliance Search in the Exchange Admin Center or Microsoft Purview.
+
+## Reference Article:
+[Search and Delete Messages from Exchange User Mailboxes](https://www.alitajran.com/search-and-delete-messages-from-exchange-user-mailboxes/)
