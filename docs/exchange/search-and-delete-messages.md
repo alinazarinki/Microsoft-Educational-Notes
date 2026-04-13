@@ -33,11 +33,3 @@ Add-ADGroupMember "Discovery Management" -Members "YourAdminUsername"
 
 # Assign Mailbox Import Export role
 New-ManagementRoleAssignment -Role "Mailbox Import Export" -User "YourAdminUsername"
----
-## Export All User Mailboxes to CSV
-
-To perform bulk search and delete operations, it is recommended to first export a list of all user mailboxes to a CSV file.
-
-### Step 1: Create the temp folder
-
-Create a folder named `temp` on the C: drive (if it doesn't already exist):
