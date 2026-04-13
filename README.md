@@ -10,7 +10,7 @@ This repository covers topics such as **Active Directory**, **Exchange Server**,
 ### Core Infrastructure
 
 ### Exchange Server
-- [DAG Maintenance Procedures](./docs/exchange/dag-maintenance.md)
+- [DAG Maintenance Procedures](./docs/exchange/Maintenance-On-Dag-Members.md)
 
 ### PowerShell & Automation
 
