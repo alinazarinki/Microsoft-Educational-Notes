@@ -2,7 +2,7 @@
 
 Before performing any software or hardware maintenance on a **DAG member**, you must first place the server into **maintenance mode**. Exchange Server provides two official scripts to safely handle DAG maintenance:
 
-- **StartDagServerMaintenance.ps1**: Moves all active databases off the server, relocates critical DAG roles (such as the Primary Active Manager – PAM), and prevents them from moving back until maintenance is complete.
+- **StartDagServerMaintenance.ps1**: Moves all active databases off the server, relocates critical DAG roles (such as the Primary [Active Manager](https://learn.microsoft.com/en-us/exchange/high-availability/database-availability-groups/active-manager?view=exchserver-2019) – PAM), and prevents them from moving back until maintenance is complete.
 - **StopDagServerMaintenance.ps1**: Takes the DAG member out of maintenance mode and makes it an active target for databases and critical DAG roles again.
 
 Both scripts support the following parameters:
