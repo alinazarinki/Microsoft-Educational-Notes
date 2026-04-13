@@ -36,12 +36,6 @@ All documentation is organized by technology inside the `docs/` folder for bette
 Microsoft-Educational-Notes/
 ├── README.md
 ├── docs/
-│   ├── domain-controller/
-│   ├── active-directory/
-│   ├── exchange/
-│   ├── dns/
-│   ├── dhcp/
-│   ├── powershell/
-│   └── windows-server/
+│   └── exchange/
 ├── images/
 └── scripts/
