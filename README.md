@@ -8,20 +8,14 @@ This repository covers topics such as **Active Directory**, **Exchange Server**,
 ## Table of Contents
 
 ### Core Infrastructure
-- [Domain Controller Best Practices]
-- [Active Directory Management]
-- [DNS Configuration and Troubleshooting]
-- [DHCP Server Guide]
 
 ### Exchange Server
 - [DAG Maintenance Procedures](./docs/exchange/dag-maintenance.md)
 
 ### PowerShell & Automation
-- [Useful PowerShell Scripts]
 
 ### Other Topics
-- [Windows Server Hardening]
-- [Group Policy Best Practices]
+
 ---
 
 ## About This Repository
